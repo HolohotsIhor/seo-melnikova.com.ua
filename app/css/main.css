@@ -5,6 +5,9 @@
 3.  Header
 4.  Form 
 5.  Slider
+6.  Whu choose us
+7.  Comments
+8.  Counter
 
 */
 /* 1.  Fonts including */
@@ -40,7 +43,12 @@ section {
   text-align: center; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 32px;
+  color: #1f3696;
+  letter-spacing: -1px; }
+
+.title-box {
+  margin-bottom: 50px; }
 
 .container.head {
   width: 100%;
@@ -50,6 +58,12 @@ h2 {
 header {
   height: auto;
   padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
   /* Mobile navigation */ }
   @media only screen and (max-device-width: 575px) {
     header {
@@ -57,6 +71,9 @@ header {
   header .logo-box {
     float: left;
     margin-right: 25px; }
+    @media only screen and (max-device-width: 1324px) {
+      header .logo-box {
+        margin-right: 20spx; } }
     @media only screen and (max-device-width: 1136px) {
       header .logo-box {
         margin-right: 15px; } }
@@ -67,7 +84,7 @@ header {
     header .logo-box img {
       height: auto;
       max-width: 100%;
-      width: 182px;
+      width: 213px;
       height: auto; }
       @media only screen and (max-device-width: 1136px) {
         header .logo-box img {
@@ -108,7 +125,9 @@ header {
     header .contact-box .btn-primary {
       float: right;
       margin-top: -5px;
-      border-radius: 55px; }
+      border-radius: 55px;
+      -webkit-box-shadow: 1.563px 3.863px 10px 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 1.563px 3.863px 10px 0 rgba(0, 0, 0, 0.2); }
       @media only screen and (max-device-width: 991px) {
         header .contact-box .btn-primary {
           float: left; } }
@@ -116,6 +135,9 @@ header {
         header .contact-box .btn-primary {
           display: inline-block;
           float: unset; } }
+      header .contact-box .btn-primary:hover {
+        -webkit-box-shadow: 1.563px 3.863px 10px 0 rgba(0, 0, 0, 0);
+                box-shadow: 1.563px 3.863px 10px 0 rgba(0, 0, 0, 0); }
   @media only screen and (max-device-width: 767px) {
     header .nav-box {
       text-align: center; } }
@@ -127,6 +149,9 @@ header {
     header .horizontal ul li {
       display: inline-block;
       margin-right: 25px; }
+      @media only screen and (max-device-width: 1324px) {
+        header .horizontal ul li {
+          margin-right: 17px; } }
       @media only screen and (max-device-width: 1278px) {
         header .horizontal ul li {
           margin-right: 15px; } }
@@ -712,7 +737,14 @@ textarea {
 */
 /*************** 5.  Slider ***************/
 .slider {
-  padding: 50px 0 0 0; }
+  padding: 50px 0 0 0;
+  margin-top: 82px; }
+  @media only screen and (max-device-width: 767px) {
+    .slider {
+      margin-top: 100px; } }
+  @media only screen and (max-device-width: 545px) {
+    .slider {
+      margin-top: 82px; } }
   .slider .text-box, .slider .img-box {
     float: left;
     width: 50%; }
@@ -764,7 +796,7 @@ textarea {
           font-size: 30px; } }
     .slider .text-box p {
       font-size: 25px;
-      color: #555;
+      color: #444;
       line-height: 32px;
       margin-bottom: 50px; }
       @media only screen and (max-device-width: 1199px) {
@@ -777,7 +809,7 @@ textarea {
           margin-bottom: 30px; } }
       @media only screen and (max-device-width: 545px) {
         .slider .text-box p {
-          font-size: 18px;
+          font-size: 17px;
           line-height: 25px;
           margin-bottom: 20px; } }
     .slider .text-box .button-box {
@@ -790,4 +822,161 @@ textarea {
                 box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.2); }
         .slider .text-box .button-box .btn-primary:hover {
           -webkit-box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0);
-                  box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0); }
+                  box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0);
+          background-color: #192f8c; }
+
+/************** 6.  Whu choose us *************/
+.why-us {
+  text-align: center; }
+  @media only screen and (max-device-width: 767px) {
+    .why-us .item-box {
+      margin-bottom: 20px; } }
+  .why-us .item-box .box-wrapper {
+    background: #fff url(../img/texture.png) bottom repeat-x;
+    padding: 100px 30px 80px 30px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #212529;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-device-width: 767px) {
+      .why-us .item-box .box-wrapper {
+        padding: 70px 30px 40px 30px; } }
+    .why-us .item-box .box-wrapper h3 {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #212529;
+      letter-spacing: -1px;
+      font-family: "Open-Sans-Light", sans-serif, Arial; }
+    .why-us .item-box .box-wrapper p {
+      font-size: 16px; }
+      @media only screen and (max-device-width: 1199px) {
+        .why-us .item-box .box-wrapper p {
+          min-height: 120px; } }
+      @media only screen and (max-device-width: 767px) {
+        .why-us .item-box .box-wrapper p {
+          min-height: auto; } }
+    .why-us .item-box .box-wrapper:hover {
+      -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+      margin-top: -5px; }
+    .why-us .item-box .box-wrapper .icon-box {
+      margin-bottom: 40px; }
+      .why-us .item-box .box-wrapper .icon-box i {
+        font-size: 55px;
+        color: #ffc500; }
+  .why-us .section-shape {
+    position: relative;
+    bottom: -150px;
+    background: url("../img/adindex-blue-wave-dots.svg") center;
+    width: 100%;
+    height: 182px;
+    background-size: cover; }
+    @media only screen and (max-device-width: 991px) {
+      .why-us .section-shape {
+        display: none; } }
+
+/* 7.  Comments */
+.clients {
+  background-color: #e4f4ff; }
+  .clients .comment-box .bd-example {
+    background-color: #fff;
+    padding: 170px 60px 110px 60px;
+    margin-top: -115px;
+    border-radius: 10px 10px 0 0;
+    color: #1f3696;
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    background: #fff url(../img/slide-bg.png) top center no-repeat; }
+    @media only screen and (max-device-width: 991px) {
+      .clients .comment-box .bd-example {
+        margin-top: 0;
+        background: #fff;
+        padding: 60px 15px 105px 15px; } }
+    .clients .comment-box .bd-example .carousel-indicators {
+      bottom: -70px; }
+      .clients .comment-box .bd-example .carousel-indicators li {
+        background-color: #ccc;
+        cursor: pointer; }
+      .clients .comment-box .bd-example .carousel-indicators li.active {
+        background-color: #1f3696; }
+    .clients .comment-box .bd-example .photo-box {
+      margin-bottom: 50px; }
+      @media only screen and (max-device-width: 991px) {
+        .clients .comment-box .bd-example .photo-box {
+          margin-bottom: 20px; } }
+      .clients .comment-box .bd-example .photo-box img {
+        margin-right: 10px;
+        border-radius: 50%; }
+      .clients .comment-box .bd-example .photo-box span {
+        font-family: "Open-Sans-Bold", sans-serif, Arial;
+        color: #1f3696; }
+    .clients .comment-box .bd-example .text-box {
+      line-height: 36px;
+      margin-bottom: 90px; }
+      @media only screen and (max-device-width: 991px) {
+        .clients .comment-box .bd-example .text-box {
+          margin-bottom: 40px; } }
+      .clients .comment-box .bd-example .text-box p {
+        color: #212529; }
+    .clients .comment-box .bd-example .date-box {
+      font-style: italic;
+      font-size: 14px; }
+  .clients .comment-box .help-figure {
+    display: block;
+    height: 20px;
+    z-index: 1;
+    bottom: -60px;
+    width: 98%;
+    margin: 0 auto;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 7px 9px #eee;
+            box-shadow: inset 0 7px 9px #eee; }
+  .clients .main-text-box {
+    color: #1d1f2e;
+    padding-top: 140px; }
+    .clients .main-text-box .content-wrapper {
+      margin-top: -30px;
+      margin-bottom: 30px; }
+      @media only screen and (max-device-width: 991px) {
+        .clients .main-text-box .content-wrapper {
+          margin-top: 70px; } }
+      .clients .main-text-box .content-wrapper h2 {
+        color: #1f3696;
+        letter-spacing: 1px; }
+      .clients .main-text-box .content-wrapper p {
+        line-height: 36px; }
+        @media only screen and (max-device-width: 991px) {
+          .clients .main-text-box .content-wrapper p {
+            line-height: 32px; } }
+
+/************* 7.  Counter ************/
+.counter {
+  text-align: center;
+  color: #ffc500; }
+  @media only screen and (max-device-width: 991px) {
+    .counter .counter-box {
+      margin-bottom: 15px; } }
+  .counter .counter-box .number-box {
+    font-size: 65px;
+    font-family: "Open-Sans-Bold", sans-serif, Arial;
+    margin-bottom: 20px;
+    color: #ffc500; }
+    @media only screen and (max-device-width: 991px) {
+      .counter .counter-box .number-box {
+        margin-bottom: 5px;
+        font-size: 48px; } }
+  .counter .counter-box .text-box {
+    font-size: 18px; }
+    .counter .counter-box .text-box .name {
+      margin-bottom: 0;
+      color: #ffc500; }
+    .counter .counter-box .text-box .event {
+      font-weight: bold;
+      font-size: 30px; }
+      @media only screen and (max-device-width: 767px) {
+        .counter .counter-box .text-box .event {
+          font-size: 18px; } }
