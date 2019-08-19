@@ -44,7 +44,7 @@ section {
 
 h2 {
   font-size: 32px;
-  color: #1f3696;
+  color: #212529;
   letter-spacing: -1px; }
 
 .title-box {
@@ -782,7 +782,7 @@ textarea {
       text-transform: uppercase;
       font-size: 55px;
       letter-spacing: -1px;
-      color: #1f3696;
+      color: #007bff;
       margin-bottom: 20px; }
       @media only screen and (max-device-width: 1199px) {
         .slider .text-box h2 {
@@ -815,7 +815,7 @@ textarea {
     .slider .text-box .button-box {
       text-align: center; }
       .slider .text-box .button-box .btn-primary {
-        background-color: #1f3696;
+        background-color: #007bff;
         padding: 15px 30px;
         border-radius: 55px;
         -webkit-box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.2);
@@ -823,7 +823,7 @@ textarea {
         .slider .text-box .button-box .btn-primary:hover {
           -webkit-box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0);
                   box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0);
-          background-color: #192f8c; }
+          background-color: #0062cc; }
 
 /************** 6.  Whu choose us *************/
 .why-us {
@@ -862,26 +862,37 @@ textarea {
     .why-us .item-box .box-wrapper:hover {
       -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
               box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-      margin-top: -5px; }
+      margin-top: -5px;
+      background-color: #e4f4ff; }
     .why-us .item-box .box-wrapper .icon-box {
       margin-bottom: 40px; }
       .why-us .item-box .box-wrapper .icon-box i {
         font-size: 55px;
         color: #ffc500; }
-  .why-us .section-shape {
-    position: relative;
-    bottom: -150px;
-    background: url("../img/adindex-blue-wave-dots.svg") center;
-    width: 100%;
-    height: 182px;
-    background-size: cover; }
-    @media only screen and (max-device-width: 991px) {
-      .why-us .section-shape {
-        display: none; } }
 
 /* 7.  Comments */
+.section-shape {
+  position: relative;
+  top: -150px;
+  background: url("../img/adindex-blue-wave-dots.svg") center;
+  width: 100%;
+  height: 487px;
+  background-size: cover; }
+  @media only screen and (max-device-width: 991px) {
+    .section-shape {
+      display: none; } }
+
 .clients {
-  background-color: #e4f4ff; }
+  background-color: #e4f4ff;
+  margin-top: -150px; }
+  .clients ul {
+    text-align: left;
+    padding-left: 50px; }
+    .clients ul li {
+      margin-bottom: 20px;
+      font-family: "Open-Sans-Bold", sans-serif, Arial; }
+      .clients ul li i {
+        color: #ffc500; }
   .clients .comment-box .bd-example {
     background-color: #fff;
     padding: 170px 60px 110px 60px;
@@ -902,7 +913,7 @@ textarea {
         background-color: #ccc;
         cursor: pointer; }
       .clients .comment-box .bd-example .carousel-indicators li.active {
-        background-color: #1f3696; }
+        background-color: #007bff; }
     .clients .comment-box .bd-example .photo-box {
       margin-bottom: 50px; }
       @media only screen and (max-device-width: 991px) {
@@ -913,7 +924,7 @@ textarea {
         border-radius: 50%; }
       .clients .comment-box .bd-example .photo-box span {
         font-family: "Open-Sans-Bold", sans-serif, Arial;
-        color: #1f3696; }
+        color: #007bff; }
     .clients .comment-box .bd-example .text-box {
       line-height: 36px;
       margin-bottom: 90px; }
@@ -937,7 +948,7 @@ textarea {
             box-shadow: inset 0 7px 9px #eee; }
   .clients .main-text-box {
     color: #1d1f2e;
-    padding-top: 140px; }
+    padding-top: 60px; }
     .clients .main-text-box .content-wrapper {
       margin-top: -30px;
       margin-bottom: 30px; }
@@ -945,10 +956,12 @@ textarea {
         .clients .main-text-box .content-wrapper {
           margin-top: 70px; } }
       .clients .main-text-box .content-wrapper h2 {
-        color: #1f3696;
-        letter-spacing: 1px; }
+        letter-spacing: 0;
+        margin-bottom: 30px; }
+        .clients .main-text-box .content-wrapper h2 span {
+          color: #ffc500; }
       .clients .main-text-box .content-wrapper p {
-        line-height: 36px; }
+        line-height: 26px; }
         @media only screen and (max-device-width: 991px) {
           .clients .main-text-box .content-wrapper p {
             line-height: 32px; } }
@@ -956,15 +969,17 @@ textarea {
 /************* 7.  Counter ************/
 .counter {
   text-align: center;
-  color: #ffc500; }
+  color: #1f3696;
+  background: url("../img/counter-bg.png") no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
   @media only screen and (max-device-width: 991px) {
     .counter .counter-box {
       margin-bottom: 15px; } }
   .counter .counter-box .number-box {
     font-size: 65px;
     font-family: "Open-Sans-Bold", sans-serif, Arial;
-    margin-bottom: 20px;
-    color: #ffc500; }
+    margin-bottom: 20px; }
     @media only screen and (max-device-width: 991px) {
       .counter .counter-box .number-box {
         margin-bottom: 5px;
@@ -972,11 +987,56 @@ textarea {
   .counter .counter-box .text-box {
     font-size: 18px; }
     .counter .counter-box .text-box .name {
-      margin-bottom: 0;
-      color: #ffc500; }
+      margin-bottom: 0; }
     .counter .counter-box .text-box .event {
       font-weight: bold;
-      font-size: 30px; }
+      font-size: 30px;
+      line-height: 20px; }
       @media only screen and (max-device-width: 767px) {
         .counter .counter-box .text-box .event {
           font-size: 18px; } }
+
+/************** 8.  Servkices *************/
+.services {
+  text-align: center; }
+  @media only screen and (max-device-width: 767px) {
+    .services .item-box {
+      margin-bottom: 20px; } }
+  .services .item-box .box-wrapper {
+    background: #fff url(../img/texture.png) bottom repeat-x;
+    padding: 100px 30px 80px 30px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #212529;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-device-width: 767px) {
+      .services .item-box .box-wrapper {
+        padding: 70px 30px 40px 30px; } }
+    .services .item-box .box-wrapper h3 {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #212529;
+      letter-spacing: -1px;
+      font-family: "Open-Sans-Light", sans-serif, Arial; }
+    .services .item-box .box-wrapper p {
+      font-size: 16px; }
+      @media only screen and (max-device-width: 1199px) {
+        .services .item-box .box-wrapper p {
+          min-height: 120px; } }
+      @media only screen and (max-device-width: 767px) {
+        .services .item-box .box-wrapper p {
+          min-height: auto; } }
+    .services .item-box .box-wrapper:hover {
+      -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+      margin-top: -5px;
+      background-color: #e4f4ff; }
+    .services .item-box .box-wrapper .icon-box {
+      margin-bottom: 40px; }
+      .services .item-box .box-wrapper .icon-box i {
+        font-size: 55px;
+        color: #ffc500; }
